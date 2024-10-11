@@ -65,7 +65,33 @@
                             class="fab fa-whatsapp"></i></a>
                 </span>
             </div>
+
+            <div class="mobile-icon-menu" >
+                <div class="icon-menu">
+                    <button onclick="menuShow()"><img class="menu-icon" src="assets/img/header/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </div>
         </nav>
+
+        <div class="mobile-menu">
+            <div class="mobile-icon-menu">
+                <div class="icon-menu-close">
+                    <button onclick="menuShow()"><img class="icon-close" src="assets/img/header/close_white_36dp-white.svg"
+                            alt=""></button>
+                </div>
+            </div>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Laboratório</a></li>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Licenças</a></li>
+                <li class="nav-item"><a class="nav-link" href="" onclick="menuShow()">Contato</a></li>
+            </ul>
+        
+        </div>
+
+    <div class="fecha-menu" onclick="fechaMenu()"></div>
     </header>
 
     <main>
@@ -90,7 +116,7 @@
                         <div class="col-xl-6 col-lg-12 pe-xl-5">
                             <div class="about-left">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 pe-md-0 ps-xl-0">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 pe-md-0 ps-xl-0 about-image-block-one">
                                         <div class="about-image-block one">
                                             <div class="inner_box">
                                                 <div class="image_box">
@@ -163,7 +189,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="section-03" >
             <div class="auto-container">
                 <div class="row">
@@ -222,7 +248,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="section-04" id="servicos">
             <div class="service-content">
                 <div class="anim-icon">
@@ -478,8 +504,13 @@
                         </div>
                         <div class="normal-text">
                             <p>
-                                Fundada em 05 de julho de 2006, a Mundial Zinco especializou-se no fornecimento de tratamentos protetivos eletrolíticos, livres de cromo hexavalente e metais pesados. Nosso foco é garantir a proteção contra corrosão de peças metálicas, atendendo às mais rigorosas exigências de qualidade e segurança para nossos clientes.
-                                <br>Na Mundial Zinco, oferecemos soluções de galvanoplastia com foco em qualidade, eficiência e inovação, atendendo às normas mais exigentes do mercado.
+                                Nosso laboratório é fundamental para assegurar a excelência dos tratamentos que oferecemos. Realizamos o controle rigoroso dos banhos, incluindo:<br>
+
+                                    <i class="fas fa-level-up-alt"></i> Controle de pH dos passivadores azul trivalente, amarelo trivalente e preto trivalente.<br>
+                                    <i class="fas fa-level-up-alt"></i> Realização de Célula de Hull para garantir a uniformidade e eficiência dos banhos.<br>
+                                    <i class="fas fa-level-up-alt"></i> Testes de Salt Spray, simulando condições extremas para verificar a resistência à corrosão.<br>
+
+                                Nossos especialistas monitoram cada detalhe, garantindo que seus produtos recebam o tratamento ideal, com qualidade assegurada em cada etapa.
                             </p>
                         </div>
                     </div>
@@ -540,7 +571,7 @@
                             </div>
                             <div class="contact-info">
                                 <div class="contact-info-block">
-                                    <div class="left-side-info">
+                                    <div class="left-side-info first-icon">
                                         <span><i class="fal fa-map-marker-alt"></i></span>
                                     </div>
                                     <div class="right-side-info">
