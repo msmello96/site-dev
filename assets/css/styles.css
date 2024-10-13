@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -68,7 +70,7 @@ nav {
     top: 0;
     left: 0;
 
-    background: var(--base-color);
+    background: var(--white-color);
 }
 
 .nav-logo {
@@ -142,7 +144,7 @@ nav ul li a {
     background-image: url('../img/mundial-zinco-site/banner-h1.png');
     background-repeat: no-repeat;
     background-position: center 10rem;
-    margin-top: -4rem;
+    margin-top: -2.5rem;
 }
 
 .banner-h1 {
@@ -253,6 +255,7 @@ img {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--primary-color);
+    text-align: center;
 }
 
 .title-first {
@@ -465,7 +468,6 @@ img {
     font-weight: 500;
     line-height: 3rem;
     color: var(--white-color);
-    
 }
 
 .tab-right-content .tab-list li i{ 
@@ -475,6 +477,20 @@ img {
 
 .tab-btn {
     display: inline-block;
+    transition: all 500ms ease;
+}
+
+.active-tab {
+    animation: zoom-in 500ms ease;
+}
+
+@keyframes zoom-in {
+    0% {
+      scale: 70%;
+    }
+    100% {
+      scale: 100%;
+    }
 }
 
 .btn-one {
@@ -538,8 +554,8 @@ img {
 
 .ambiental-container {
     padding: 1rem 1rem 5rem;
-    margin-left: 3rem;
-    background-color: rgba(36, 36, 36, 0.7);
+    margin-left: 10rem;
+    background-color: rgba(36, 36, 36, 0.85);
     border-radius: 5px;
 }
 
@@ -599,11 +615,22 @@ img {
     line-height: 2.6rem;
 }
 
+.contact-content .contact-info .right-side-info p {
+    color: var(--secondary-color);
+}
+
 .contact-info .contact-info-block .right-side-info p a {
     color: var(--primary-color);
     font-style: italic;
     font-weight: 600;
     
+}
+
+.contact-info .contact-info-block .right-side-info p .contact-email,
+.contact-info .contact-info-block .right-side-info p .contact-whats {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: normal;
 }
 
 .img-text {
@@ -1966,5 +1993,21 @@ footer h2 {
     }
     .section-07 .contact-area .img-text {
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .banner-h1 {
+        margin-left: 23rem;
+    }
+
+    .ambiental-container {
+        margin-left: 20rem;
+        padding: 5rem 10rem 10rem;
+    }
+
+    .blog-area {
+        justify-content: center;
+        display: flex;
     }
 }
