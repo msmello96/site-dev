@@ -1526,7 +1526,7 @@ footer h2 {
 
     /* SECTION 05 */
     .section-05 {
-        padding: 4rem 2rem;
+        display: none !important;
     }
 
     /* SECTION 06 */
@@ -1896,7 +1896,7 @@ footer h2 {
 
     /* SECTION 05 */
     .section-05 {
-        padding: 4rem 2rem;
+        display: none !important;
     }
 
     /* SECTION 06 */
