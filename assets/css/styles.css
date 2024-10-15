@@ -1343,9 +1343,7 @@ footer h2 {
     border: 2px solid var(--primary-color);
 }
 
-.section-04 .tab-right-content .btn-box {
-    text-align: center;
-}
+
 
 @media only screen and (max-width: 487px) {
     /* HEADER */
@@ -1606,6 +1604,10 @@ footer h2 {
     }
     .service-content .icon-2 {
         opacity: 0.3;
+    }
+
+    .section-04 .tab-right-content .btn-box {
+        text-align: center;
     }
 
     /* SECTION 05 */
@@ -1885,6 +1887,10 @@ footer h2 {
     .mobile-imagem {
         display: block !important;
         position: relative;
+    }
+
+    .section-04 .tab-right-content .btn-box {
+        text-align: center;
     }
 
     /* SECTOION 03 */
