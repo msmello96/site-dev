@@ -17,6 +17,14 @@ nav {
     background-size: cover;
 }
 
+.banner-blog-02 {
+    background: url('../img/blog/banner-2.png') !important;
+}
+
+.banner-blog-03 {
+    background: url('../img/blog/banner-3.png') !important;
+}
+
 .notice .main-title h2{
     position: relative;
     z-index: 1;
