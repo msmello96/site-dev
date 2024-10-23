@@ -46,6 +46,13 @@ ul li {
     list-style: none;
 }
 
+.fab {
+    font-size: 2.4rem;
+}
+
+.fas {
+    font-size: 2.2rem;
+}
 
 /* HEADER */
 header {
@@ -269,7 +276,6 @@ nav ul li a {
 .auto-container {
     max-width: 129rem;
     margin: 0 auto;
-    padding: 0 1.2rem;
 }
 
 .about-section {
@@ -402,6 +408,14 @@ figure {
 
 .section-03 .prod-title {
     padding: 1rem 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.section-03 .prod-title .btn{
+    width: 7rem;
+    height: 3rem;
 }
 
 .section-03 .services {
@@ -986,4 +1000,138 @@ figure {
 .bsingle__content .blog__btn .btn:hover {
     background: var(--primary-color);
     color: #fff;
+}
+
+/* SECTION 04 - CONTATO */
+
+.section-04 .title {
+    text-align: center;
+}
+
+.section-04 .cidades-contato .advantages-box {
+    display: flex;
+    justify-content: center;
+}
+
+.section-04 .cidades-contato .main-title h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.section-04 .cidades-contato .infos-contato {
+    padding-top: 2rem;
+}
+
+.section-04 .cidades-contato .infos-contato .informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.section-04 .cidades-contato .infos-contato .endereco {
+    text-align: center;
+}
+
+.section-04 .cidades-contato .module-contact {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0 5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--third-color);
+    color: var(--white-color);
+    padding: 50px 200px 75px;
+}
+
+.footer-title {
+    margin-bottom: 5rem;
+}
+
+footer h2 {
+    font-size: 36px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--white-color);
+}
+
+.infos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.infos-footer p {
+    color: var(--white-color);
+}
+
+.footer-logo img {
+    width: 280px;
+    height: 100px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-social i {
+    color: var(--white-color);
+}
+
+.footer-dev {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--white-color);
+    background: var(--third-color);
+    padding: 1rem;
+}
+
+.footer-dev a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.footer-dev p {
+    margin-bottom: 0;
+}
+
+.fa-fab {
+    color: white !important;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.whatsapp-link-footer {
+    text-decoration: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* Whatsapp */
+.whats {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 185;
+}
+
+.whats:hover{
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
 }
