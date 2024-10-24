@@ -461,7 +461,15 @@ figure {
     color: var(--secondary-color);
 }
 
+
 /* SECTION 04 - CONTATO */
+.section-04 .advantages-box ul li {
+    font-size: 1.2rem;
+}
+
+.section-04 .advantages-box ul li i {
+    font-size: 1.2rem;
+}
 
 
 
