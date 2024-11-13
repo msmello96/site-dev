@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
     <title>Manzini Franquias</title>
     <link rel="icon" href="assets/img/favicon.png" sizes="192x192">
@@ -249,7 +251,8 @@
             </div>
 
             <div class="video">
-                <iframe width="760" height="415" src="https://www.youtube.com/embed/gpDG4AcNKp0?si=KSzZt_cmnLlto1_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+                <iframe width="760" height="415" src="https://www.youtube.com/embed/gpDG4AcNKp0?si=KSzZt_cmnLlto1_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
             <div class="selo-circular">
                 <img src="assets/img/texto-circular.png" alt="">
@@ -257,15 +260,96 @@
         </section>
 
         <section class="section-04">
+            <div class="container">
+                <div class="row">  
+                    <div class="pizzas">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-01.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-02.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-03.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-04.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-05.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-06.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-07.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-08.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-09.webp" alt="">
+                            </div> 
+                            <div class="item">
+                                <img src="./assets/img/pizzas/pizza-10.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pizzas-title">
+                        <h2>
+                            Venha ser <strong>franqueado</strong> da <br>
+                            melhor pizzaria do  Oeste Paulista
+                        </h2>
+                    </div>
+
+                    <div class="module-contact">
+                        <a class="btn btn--secondary" href="#">
+                            Quero ser franqueado
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
 
         </section>
     </main>
-
+    
     <footer>
-
+        
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 20,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1024: {
+                        items: 3
+                    }
+                }
+
+            });
+        });
+    </script>
 </body>
 </html>

@@ -270,6 +270,12 @@ nav ul li a {
   margin-top: 1.2rem;
 }
 
+.section-01 .right-form form .form-control, 
+.section-01 .right-form form .form-select {
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
 .section-01 .right-form form .endereco {
   width: 100%;
   justify-content: space-between;
@@ -386,4 +392,50 @@ nav ul li a {
 
 .section-03 .selo-circular img {
   width: 75%;
+}
+
+/* SECTION 04 */
+.section-04 {
+  padding: 10rem 5rem;
+  background: url('../img/textura-preta.png');
+}
+
+.section-04 .pizzas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-04 .pizzas .item {
+  border: 1rem solid var(--color-verde-claro);
+  border-radius: 1rem;
+}
+
+.section-04 .item img {
+  width: 100% !important;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition-property: filter;
+  display: block;
+}
+
+.section-04 .pizzas-title {
+  margin-top: 5rem;
+}
+
+.section-04 .pizzas-title h2 {
+  color: var(--color-verde-escuro);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.section-04 .module-contact {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.section-04 .module-contact .btn--secondary {
+  width: 25rem;
 }
