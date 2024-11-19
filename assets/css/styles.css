@@ -439,3 +439,57 @@ nav ul li a {
 .section-04 .module-contact .btn--secondary {
   width: 25rem;
 }
+
+/* SECTION-05 */
+.section-05 {
+  background: url('../img/textura-preta.png') var(--color-vermelho);
+  padding: 10rem 0;
+}
+
+.section-05 .title {
+  padding: 0 8rem;
+}
+
+.section-05 .title h3 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.section-05 .img-projeto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-05 .img-projeto img {
+  object-fit: cover;
+  border-radius: 2rem;
+  aspect-ratio: 16/9;
+}
+
+.section-05 .infos-div {
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-05 .infos ul li {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.section-05 .module-contact {
+  width: 100%;
+  padding-left: 2.5rem;
+}
+
+.section-05 .module-contact .btn--secondary {
+  width: 40rem;
+  font-size: 1.8rem;
+}
