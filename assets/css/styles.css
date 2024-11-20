@@ -226,7 +226,6 @@ nav ul li a {
 
 .btn--secondary::before {
   background-color: var(--color-verde-escuro);
-  
 }
 
 .btn::before {
@@ -492,4 +491,156 @@ nav ul li a {
 .section-05 .module-contact .btn--secondary {
   width: 40rem;
   font-size: 1.8rem;
+}
+
+/* SECTION 06 */
+.section-06 {
+  background: url('../img/textura-preta.png') var(--color-verde-escuro);
+  padding: 10rem 0;
+}
+
+.section-06 .title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-06 .title h3 {
+  font-size: 6rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.section-06 .noticias {
+  display: flex;
+  justify-content: center;
+}
+
+.section-06 .noticias .card {
+  width: 40rem;
+  border: 5px solid var(--color-dourado);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.section-06 .noticias .card img {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.section-06 .noticias .card-body {
+  padding: 2rem;
+}
+
+.section-06 .noticias .card-text {
+  font: var(--secondary-font);
+  color: var(--color-verde-claro);
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.section-06 .noticias .card-button {
+  padding: 2rem;
+  text-align: center;
+  font: var(--secondary-font);
+  color: var(--color-verde-claro);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section-06 .noticias .card-button a {
+  border: 2px solid var(--color-verde-claro);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.section-06 .module-contact {
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.section-06 .module-contact .btn--secondary {
+  width: 35rem;
+  font-size: 2rem;
+}
+
+.section-06 .btn--secondary::before {
+  background-color: var(--color-vermelho);
+}
+ 
+
+footer { 
+  background: url('../img/textura-preta.png') var(--color-vermelho);
+  padding: 10rem 0 7rem;
+  align-items: center;
+}
+
+footer .footer-logo {
+  align-items: center;
+  display: flex;
+}
+
+footer .footer-logo img {
+  width: 30rem;
+}
+
+footer h4 {
+  color: var(--white-color);
+  font-size: 5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer p {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+footer .fale-conosco {
+  justify-items: center;
+  padding: 0 0 0 3rem;
+}
+
+footer .info-instagram {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+footer .info-instagram i {
+  vertical-align: bottom;
+  font-size: 3rem;
+}
+
+footer .info-instagram i:hover {
+  transform: none !important;
+  transition: none !important;
+  font-size: 3rem !important;
+}
+
+footer .info-instagram p {
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+
+
+.footer-dev {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--white-color);
+  background: var(--color-vermelho);
+  padding: 1rem;
+}
+
+.footer-dev a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.footer-dev p {
+  margin-bottom: 0;
 }
