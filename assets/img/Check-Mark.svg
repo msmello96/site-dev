@@ -1,1 +1,9 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40"><defs><image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQMAAADaua+7AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAUpFFpLNNVQAAAAJ0Uk5TAP9bkSK1AAAAUUlEQVR4nGNk/NfIyP7jISP/h4+M8g9+Mtof+MtY3/AfjP8zMEDxASBuYPz/n5Hx/z8mxn9/WRj/V3Qw/t8QwPj/gQJcPUgvyAyQWSAzgWYDABA2K8/DtjSVAAAAAElFTkSuQmCC"/></defs><style></style><use  href="#img1" x="3" y="3"/></svg>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+	<title>hey</title>
+	<defs>
+		<image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAAUpFF////gjfAgQAAAAN0Uk5TAP//RFDWIQAAAGZJREFUeJxVzssNgCAQBNCZRO4eoB4sAROtUg+UQD+QWAAmuEvg4Okl+x2CB3Ii3IZ2EyeAi1IDMk0QKqUFtIlOAB1bOiEq9EkxVXqm2iLQr1En9ycpLve95RX+N8ej8XaEmJF6wA8bACLbo7Sz+QAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

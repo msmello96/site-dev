@@ -34,13 +34,22 @@
                         <a href="#">Inicio</a>
                     </li>
                     <li>
-                        <a href="#sobre-nos">Franqueado</a>
+                        <a href="#numeros">Números</a>
                     </li>
                     <li>
-                        <a href="#servicos">Onde encontrar</a>
+                        <a href="#franqueado">Franqueado</a>
                     </li>
                     <li>
-                        <a href="#laboratorio">Contato</a>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#vantagens">Vantagens</a>
+                    </li>
+                    <li>
+                        <a href="#noticias">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +65,7 @@
 
             <div class="mobile-icon-menu" >
                 <div class="icon-menu">
-                    <button onclick="menuShow()"><img class="menu-icon" src="assets/img/mundial-zinco-site/menu_white_36dp.svg" alt=""></button>
+                    <button onclick="menuShow()"><img class="menu-icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
                 </div>
             </div>
         </nav>
@@ -64,18 +73,18 @@
         <div class="mobile-menu">
             <div class="mobile-icon-menu">
                 <div class="icon-menu-close">
-                    <button onclick="menuShow()"><img class="icon-close" src="assets/img/mundial-zinco-site/close_white_36dp-white.svg"
+                    <button onclick="menuShow()"><img class="icon-close" src="assets/img/close_white_36dp-white.svg"
                                                       alt=""></button>
                 </div>
             </div>
             <ul>
                 <li class="nav-item"><a class="nav-link" href="#" onclick="menuShow()">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre-nos" onclick="menuShow()">Sobre Nós</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicos" onclick="menuShow()">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#laboratorio" onclick="menuShow()">Laboratório</a></li>
-                <li class="nav-item"><a class="nav-link" href="#licencas" onclick="menuShow()">Licenças</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato" onclick="menuShow()">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="#blog" onclick="menuShow()">Blog</a></li>            </ul>
+                <li class="nav-item"><a class="nav-link" href="#numeros" onclick="menuShow()">Números</a></li>
+                <li class="nav-item"><a class="nav-link" href="#franqueado" onclick="menuShow()">Franqueado</a></li>
+                <li class="nav-item"><a class="nav-link" href="#produtos" onclick="menuShow()">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vantagens" onclick="menuShow()">Vantagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#noticias" onclick="menuShow()">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato" onclick="menuShow()">Contato</a></li>            </ul>
 
         </div>
 
@@ -84,7 +93,7 @@
     </header>
     
     <main>
-        <section class="section-01">
+        <section class="section-01" id="inicio">
             <div class="container">
                 <div class="row">
                     <div class="col-md-1 ghost-div">
@@ -141,7 +150,7 @@
                             </div>
 
                             <label for="investimento">Investimento</label>
-                            <select class="form-select form-select-lg" aria-label="Investimento">
+                            <select class="form-select form-select-lg" id="investimento" aria-label="Investimento">
                                 <option value="1">Abaixo de R$ 300 mil</option>
                                 <option value="2">R$ 300 mil a R$ 500 mil</option>
                                 <option value="3">R$ 500 mil a R$ 700 mil</option>
@@ -159,7 +168,7 @@
             </div>
         </section>
 
-        <section class="section-02">
+        <section class="section-02" id="numeros">
             <div class="container">
                 <div class="row">
                     <div class="info-01 col-md-3">
@@ -168,7 +177,7 @@
                                 Ingredientes do nosso sucesso:
                             </h3>
                         </div>
-                        <div class="module-contact">
+                        <div class="module-contact desktop">
                             <a class="btn btn--secondary" href="#">
                                 Quero saber mais
                             </a>
@@ -228,7 +237,7 @@
                     <div class="info-04 col-md-3">
                         <div class="info-logo d-flex">
                             <div class="icon-div">
-                                <img src="./assets/img/logo-mzn-fran.png" alt="">
+                                <img src="./assets/img/logo-manzini-verde.png" alt="">
                             </div>
                             <div class="text-div">
                                 <p>
@@ -238,11 +247,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="module-contact mobile">
+                        <a class="btn btn--secondary" href="#">
+                            Quero saber mais
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section class="section-03">
+        <section class="section-03" id="franqueado">
             <div class="title">
                 <h2>
                     Mais que uma <strong>pizzaria</strong>, <br>
@@ -251,7 +266,7 @@
             </div>
 
             <div class="video">
-                <iframe width="760" height="415" src="https://www.youtube.com/embed/gpDG4AcNKp0?si=KSzZt_cmnLlto1_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="iframe-video" src="https://www.youtube.com/embed/gpDG4AcNKp0?si=KSzZt_cmnLlto1_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <div class="selo-circular">
@@ -259,7 +274,7 @@
             </div>
         </section>
 
-        <section class="section-04">
+        <section class="section-04" id="produtos">
             <div class="container">
                 <div class="row">  
                     <div class="pizzas">
@@ -316,7 +331,7 @@
 
         </section>
 
-        <section class="section-05">
+        <section class="section-05" id="vantagens">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -359,7 +374,7 @@
                                         <img src="./assets/img/Check-Mark.svg" alt=""> Massas e batatas inclusas no rodízio
                                     </li>
                                     <li>
-                                        <img src="./assets/img/Check-Mark.svg" alt=""> Espaço altamente atrativo para comemorações
+                                        <img src="./assets/img/Check-Mark.svg" alt=""> Espaço atrativo para comemorações
                                     </li>
                                     <li>
                                         <img src="./assets/img/Check-Mark.svg" alt=""> Espaço Kids com monitor
@@ -385,7 +400,7 @@
             </div>
         </section>
 
-        <section class="section-06">
+        <section class="section-06" id="noticias">
             <div class="container">
                 <div class="row">
                     <div class="title">
@@ -395,17 +410,17 @@
                     </div>
                     <div class="noticias">
                         <div class="card">
-                            <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml">
+                            <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml" target="_blank">
                                 <img src="./assets/img/noticia.jpg" class="card-img-top" alt="...">
                             </a>
                             <div class="card-body">
-                                <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml">
+                                <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml" target="_blank">
                                     <p class="card-text">G1: Manzini Pizzaria, de Presidente Prudente, tem o rodízio mais completo da cidade.</p>
                                 </a>
                             </div>
 
                             <div class="card-button">
-                                <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml">
+                                <a href="https://g1.globo.com/google/amp/sp/presidente-prudente-regiao/especial-publicitario/manzini-pizzaria/noticia/2024/05/24/manzini-pizzaria-de-presidente-prudente-tem-o-rodizio-mais-completo-da-cidade.ghtml" target="_blank">
                                     Saiba mais
                                 </a>
                             </div>
@@ -425,7 +440,7 @@
 
     </main>
     
-    <footer>
+    <footer id="contato">
         <div class="container">
             <div class="row">
                 <div class="div-infos d-flex">
@@ -465,7 +480,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-3"> 
+                    <div class="col-sm-3 footer-trofeu"> 
                         <img src="./assets/img/trofeus.png" alt="">
                     </div>
                 </div>
