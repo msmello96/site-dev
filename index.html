@@ -443,12 +443,12 @@
     <footer id="contato">
         <div class="container">
             <div class="row">
-                <div class="div-infos d-flex">
-                    <div class="col-sm-3 footer-logo">
+                <div class="footer-desk div-infos d-flex">
+                    <div class="col-md-3 footer-logo">
                         <img src="./assets/img/logo-manz.png" alt="">
                     </div>
                     
-                    <div class="col-sm-3 d-flex flex-column fale-conosco">
+                    <div class="col-md-3 d-flex flex-column fale-conosco">
                         <div class="title">
                             <h4>
                                 Fale conosco
@@ -460,13 +460,14 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-3 d-flex flex-column">
+                    <div class="col-md-3 d-flex flex-column">
                         <div class="title">
                             <h4>
                                 Endereço
                             </h4>
                             <p>
-                                Alguma Avenida, Bairro - Presidente Prudente-SP
+                                Alguma Avenida, Bairro - <br>
+                                Presidente Prudente-SP
                             </p>
                         </div>
                         
@@ -480,7 +481,50 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-3 footer-trofeu"> 
+                    <div class="col-md-3 footer-trofeu"> 
+                        <img src="./assets/img/trofeus.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-mobile div-infos">
+                    <div class="col-md-6 footer-logo">
+                        <img src="./assets/img/logo-manz.png" alt="">
+                    </div>
+                    
+                    <div class="col-md-6 d-flex flex-column fale-conosco">
+                        <div class="title">
+                            <h4>
+                                Fale conosco
+                            </h4>
+                        </div>
+                        <div class="sub-title">
+                            <p>(19) 99999-9999</p>
+                            <p>(19) 99999-9999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="title">
+                            <h4>
+                                Endereço
+                            </h4>
+                            <p>
+                                Alguma Avenida, Bairro - <br>
+                                Presidente Prudente-SP
+                            </p>
+                        </div>
+                        
+                        <div class="title">
+                            <h4>
+                                Email
+                            </h4>
+                            <p>
+                                contato@manzinifranquia.com
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 footer-trofeu"> 
                         <img src="./assets/img/trofeus.png" alt="">
                     </div>
                 </div>
@@ -497,7 +541,7 @@
     </footer>
         
         <div class="footer-dev">
-            <p>Desenvolvido por <a href="https://www.thpadua.com.br/">TH Pádua Agência</a></p>
+            <p>Desenvolvido por <a href="https://www.thpadua.com.br/" target="_blank">TH Pádua Agência</a></p>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
@@ -509,22 +553,22 @@
             $(document).ready(function () {
                 $(".owl-carousel").owlCarousel({
                     items: 3,
-                loop: true,
-                margin: 20,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                dots: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 3
-                    },
-                    1024: {
-                        items: 3
-                    }
+                    loop: true,
+                    margin: 20,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 3
+                        },
+                        1024: {
+                            items: 3
+                        }
                 }
 
             });
