@@ -374,6 +374,7 @@ nav ul li a {
   background: url('../img/background-pizza.jpg') var(--color-dourado);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 8rem 0;
   }
 
@@ -410,6 +411,7 @@ nav ul li a {
 .section-04 {
   padding: 10rem 5rem;
   background: url('../img/textura-preta.png');
+
 }
 
 .section-04 .pizzas {
