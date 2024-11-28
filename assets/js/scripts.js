@@ -23,3 +23,29 @@ function fechaMenu() {
     });
 }
 
+function topFunction() {
+    if (window.innerWidth <= 487) {
+        const targetElement = document.getElementById('mobile-anchor');
+        targetElement.scrollIntoView();
+
+        setTimeout(() => {
+            const inputField = document.getElementById('nome');
+            if (inputField) {
+                inputField.focus();
+            }
+        }, 700);
+
+    } else {
+
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        
+        setTimeout(() => {
+            const inputField = document.getElementById('nome');
+            if (inputField) {
+                inputField.focus();
+            }
+        }, 500);
+        
+    }
+}

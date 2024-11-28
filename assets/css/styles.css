@@ -39,7 +39,9 @@ h6 {
 
 p,
 a,
-span {
+span,
+input,
+select {
   font-family: var(--secondary-font);
   color: var(--third-color);
 }
@@ -125,7 +127,7 @@ nav ul li a {
 }
 
 .fab:hover {
-  color: var(--white-color);
+  color: var(--color-vermelho);
   transition: 0.3s ease-out;
   transform: scale(1.2);
   font-size: 2.4rem;
@@ -137,7 +139,7 @@ nav ul li a {
 
 /* SECTION 01 */
 .section-01 {
-  background: url('../img/hero2.png');
+  background: url('../img/hero2.webp') #000;
   background-position: -15rem 0rem;
   background-repeat: no-repeat;
   padding: 15rem 0 7rem 0;
@@ -155,6 +157,16 @@ nav ul li a {
   font-size: 3.3rem;
   padding: 1rem;
   border-radius: 1rem;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+.section-01 .left-text .faturamento h2 strong {
+  background-color: var(--white-color);
+  color: var(--color-vermelho);
+  padding: 7px 5px 0;
+  border-radius: 5px;
+  font-size: 3.5rem;
 }
 
 .section-01 .left-text .franqueado h1 {
@@ -172,7 +184,7 @@ nav ul li a {
 }
 
 .module-contact .btn {
-  width: 20rem;
+  width: 25rem;
   padding: 0 1.5rem;
 }
 
@@ -300,6 +312,10 @@ nav ul li a {
   background-color: var(--color-vermelho);
 }
 
+.section-01 .mobile-anchor {
+  width: 0;
+}
+
 /* SECTION 02 */
 
 .section-02 {
@@ -371,7 +387,7 @@ nav ul li a {
 
 /* SECTION 03 */
 .section-03 { 
-  background: url('../img/background-pizza.jpg') var(--color-dourado);
+  background: url('../img/background-pizza.webp') var(--color-dourado);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,6 +512,10 @@ nav ul li a {
   font-size: 2rem;
   font-weight: 500;
   margin-top: 1rem;
+}
+
+.section-05 .infos .infos-text {
+  margin-bottom: 4rem;
 }
 
 .section-05 .infos ul li img {
@@ -669,6 +689,10 @@ footer .footer-trofeu {
   padding-left: 3rem;
 }
 
+footer .fab:hover {
+  color: var(--white-color);
+}
+
 .footer-dev {
   display: block;
   width: 100%;
@@ -796,6 +820,7 @@ footer .footer-trofeu {
   /* SECTION 01 */
   .section-01 {
     background-size: cover;
+    padding: 10rem 0 7rem 0;
   }
 
   .section-01 .row {
@@ -811,6 +836,15 @@ footer .footer-trofeu {
   .section-01 .left-text {
     padding: 0 2rem;
     text-align: center;
+  }
+
+  .section-01 .left-text .faturamento h2 {
+    font-size: 2.3rem;
+    line-height: 4rem;
+  }
+
+  .section-01 .left-text .faturamento h2 strong {
+    font-size: 2.7rem;
   }
 
   .section-01 .left-text .franqueado h1 {
@@ -959,6 +993,11 @@ footer .footer-trofeu {
 
   .section-06 .noticias .card {
     width: 35rem;
+  }
+
+  /* SECTION 07 */
+  .section-07 .row {
+    gap: 5rem !important;
   }
 
   /* FOOTER */
@@ -1416,4 +1455,38 @@ footer .footer-trofeu {
     background-position: center top;
     background-size: cover;
   }
+}
+
+
+.section-07 {
+  background: url('../img/textura-preta.png') var(--white-color);
+  padding: 10rem 1rem;
+}
+
+.section-07 .row {
+  gap: 10rem;
+}
+
+.section-07 h3 {
+  font-size: 5rem;
+  color: var(--color-verde-escuro);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.section-07 .module-contact .btn--secondary{
+  width: 40rem;
+  background-color: var(--color-verde-claro);
+}
+
+.section-07 .fotos-direita .card {
+  max-height: 44rem;
+  max-width: 28.5rem;
+  border: 0;
+}
+
+.section-07 .fotos-direita .card img {
+border-radius: 1rem;
+
 }
