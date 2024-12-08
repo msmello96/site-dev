@@ -24,16 +24,10 @@ function fechaMenu() {
 }
 
 function topFunction() {
-    if (window.innerWidth <= 487) {
+    if (window.innerWidth <= 576) {
         const targetElement = document.getElementById('mobile-anchor');
         targetElement.scrollIntoView();
 
-        setTimeout(() => {
-            const inputField = document.getElementById('nome');
-            if (inputField) {
-                inputField.focus();
-            }
-        }, 700);
 
     } else {
 

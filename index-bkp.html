@@ -103,10 +103,17 @@
     </header>
 
     <main>
-        <section class="section-01 desktop-h1" id="inicio-desktop">
+        <section class="section-01" id="inicio">
             <div class="container">
                 <div class="row">
+
                     <div class="left-text col-md-7">
+                        <div class="faturamento col-md-8">
+                            <h2>Faturamento médio <br>
+                                anual <strong>R$ 3.5 milhões</strong> com <br>
+                                lucratividade média de <strong>15%</strong>
+                            </h2>
+                        </div>
                         <div class="franqueado">
                             <h1>
                                 Torne-se um <br>
@@ -115,12 +122,12 @@
                                 do oeste paulista
                             </h1>
                         </div>
-                        <div class="faturamento col-md-8">
-                            <h2>Faturamento médio <br>
-                                <strong>R$ 3.5 milhões</strong> <br>
-                                ao ano
-                            </h2>
+                        <div class="module-contact">
+                            <a class="btn btn--secondary" onclick="topFunction()">
+                                Quero ser franqueado
+                            </a>
                         </div>
+                        <div class="mobile-anchor" id="mobile-anchor"></div>
                     </div>
 
                     <div class="right-form col-md-5">
@@ -196,42 +203,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-01 mobile" id="inicio-mobile">
-            <div class="container">
-                <div class="row">
-                    <div class="mobile-logo">
-                        <a href=""><img src="./assets/img/logo-manz.png" alt="Logo Manzini Franquias"></a>
-                    </div>
-
-                    <div class="left-text col-md-7">
-                        <div class="franqueado">
-                            <h1>
-                                <p style="font-size: 3.5rem;">Torne-se um</p>
-                                <p style="font-size: 4.8rem; font-weight: bold;"><strong>franqueado</strong></p>
-                                <p style="font-size: 3rem;">da maior pizzaria do</p>
-                                <p style="font-size: 4.4rem;"><strong>oeste paulista</strong></p>
-                            </h1>
-                        </div>
-                        <div class="faturamento">
-                            <h2>Faturamento médio <br>
-                                <strong>R$ 3.5 milhões</strong> <br>
-                                ao ano
-                            </h2>
-                        </div>
-                        <div class="fachada">
-                            <img src="./assets/img/fachada.webp" alt="">
-                        </div>
-                        <div class="module-contact">
-                            <a class="btn btn--secondary" onclick="topFunction()">
-                                Quero ser franqueado
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -444,7 +415,7 @@
                                         Doces
                                     </li>
                                     <li>
-                                        <img src="./assets/img/Check-Mark.svg" alt=""> Macarrão e batatas inclusas no
+                                        <img src="./assets/img/Check-Mark.svg" alt=""> Massas e batatas inclusas no
                                         rodízio
                                     </li>
                                     <li>
@@ -540,89 +511,6 @@
                         <div class="card">
                             <img src="./assets/img/pizzas/pizza-10.webp" class="card-img-top" alt="...">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-08 mobile-form" id="mobile-form">
-            <div class="container">
-                <div class="row">
-
-                    <div class="mobile-anchor" id="mobile-anchor"></div>
-
-                    <div class="right-form col-md-5">
-                        <form id="form-lead-shark2"
-                            action="https://leadshark.com.br/form/7f39f8317fbdb1988ef4c628eba02591?api=true&token=true&redirect&add=true"
-                            method="post">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="name" class="form-control form-control-lg" id="nome"
-                                placeholder="Informe seu nome" required>
-
-                            <label for="phone">Telefone</label>
-                            <input type="tel" name="phone" class="form-control form-control-lg" id="phone"
-                                placeholder="(17) 99999-9999" required>
-
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" class="form-control form-control-lg" id="email"
-                                placeholder="Informe seu e-mail" required>
-
-                            <div class="endereco d-flex">
-                                <div class="cidade">
-                                    <label for="cidade">Cidade</label>
-                                    <input type="text" name="metatags[cidade]" class="form-control form-control-lg"
-                                        id="cidade" placeholder="Presidente Prudente" required>
-                                </div>
-                                <div class="estado">
-                                    <label for="estado">Estado</label>
-                                    <select name="metatags[estado]" class="form-select form-select-lg"
-                                        aria-label="Estado" id="estado">
-                                        <option value="AC">AC</option>
-                                        <option value="AL">AL</option>
-                                        <option value="AP">AP</option>
-                                        <option value="AM">AM</option>
-                                        <option value="BA">BA</option>
-                                        <option value="CE">CE</option>
-                                        <option value="DF">DF</option>
-                                        <option value="ES">ES</option>
-                                        <option value="GO">GO</option>
-                                        <option value="MA">MA</option>
-                                        <option value="MT">MT</option>
-                                        <option value="MS">MS</option>
-                                        <option value="MG">MG</option>
-                                        <option value="PA">PA</option>
-                                        <option value="PB">PB</option>
-                                        <option value="PR">PR</option>
-                                        <option value="PE">PE</option>
-                                        <option value="PI">PI</option>
-                                        <option value="RJ">RJ</option>
-                                        <option value="RN">RN</option>
-                                        <option value="RS">RS</option>
-                                        <option value="RO">RO</option>
-                                        <option value="RR">RR</option>
-                                        <option value="SC">SC</option>
-                                        <option selected value="SP">SP</option>
-                                        <option value="SE">SE</option>
-                                        <option value="TO">TO</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <label for="investimento">Investimento</label>
-                            <select name="metatags[investimento]" class="form-select form-select-lg" id="investimento"
-                                aria-label="Investimento">
-                                <option value="Abaixo de R$ 300 mil">Abaixo de R$ 300 mil</option>
-                                <option value="R$ 300 mil a R$ 500 mil">R$ 300 mil a R$ 500 mil</option>
-                                <option value="R$ 500 mil a R$ 700 mil">R$ 500 mil a R$ 700 mil</option>
-                                <option value="Acima de R$700 mil" selected>Acima de R$700 mil</option>
-                            </select>
-
-                            <div class="module-contact">
-                                <button type="submit" class="btn btn--secondary">
-                                    Quero ser um franqueado
-                                </button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

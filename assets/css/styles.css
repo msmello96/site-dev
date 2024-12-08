@@ -17,6 +17,9 @@
 
   --primary-font: 'venice-blvd', sans-serif;
   --secondary-font: 'Sora', sans-serif;
+  
+  --terceira-font: 'Barlow', sans-serif;
+  --quarta-font: 'Open Sans', sans-serif;
 }
 
 html,
@@ -139,10 +142,18 @@ nav ul li a {
 
 /* SECTION 01 */
 .section-01 {
-  background: url('../img/hero2.webp') #000;
-  background-position: -15rem 0rem;
-  background-repeat: no-repeat;
+  background-color: linear-gradient(to bottom, var(--color-vermelho), #000, #000);
+  background: url('../img/hero2.webp');
+  background-position: center;
   padding: 15rem 0 7rem 0;
+}
+
+#inicio-mobile {
+  display: none;
+}
+
+#mobile-form {
+  display: none;
 }
 
 .section-01 .left-text {
@@ -152,26 +163,28 @@ nav ul li a {
 }
 
 .section-01 .left-text .faturamento h2 {
-  background: var(--color-vermelho);
   color: var(--white-color);
-  font-size: 3.3rem;
+  font-size: 2.7rem;
   padding: 1rem;
   border-radius: 1rem;
   text-transform: uppercase;
-  line-height: 5rem;
+  line-height: 5.2rem;
+  font-family: var(--terceira-font) !important;
+  font-weight: normal;
 }
 
 .section-01 .left-text .faturamento h2 strong {
-  background-color: var(--white-color);
-  color: var(--color-vermelho);
-  padding: 7px 5px 0;
+  background-color: var(--color-verde-claro);
+  color: var(--white-color);
+  padding: 7px 10px;
   border-radius: 5px;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 .section-01 .left-text .franqueado h1 {
   color: var(--white-color);
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -608,6 +621,44 @@ nav ul li a {
 .section-06 .btn--secondary::before {
   background-color: var(--color-vermelho);
 }
+
+/* SECTION 07 */
+.section-07 {
+  background: url('../img/textura-preta.png') var(--white-color);
+  padding: 10rem 1rem;
+}
+
+.section-07 .row {
+  gap: 10rem;
+}
+
+.section-07 h3 {
+  font-size: 5rem;
+  color: var(--color-verde-escuro);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.section-07 .module-contact .btn--secondary{
+  width: 40rem;
+  background-color: var(--color-verde-claro);
+}
+
+.section-07 .fotos-direita .card {
+  max-height: 44rem;
+  max-width: 28.5rem;
+  border: 0;
+}
+
+.section-07 .fotos-direita .card img {
+border-radius: 1rem;
+
+}
+
+.section-01 .fachada img { 
+  width: 100%;
+}
  
 /* Whatsapp */
 .whats {
@@ -718,11 +769,16 @@ footer .fab:hover {
 @media only screen and (max-width: 576px) {
   /* HEADER */
   nav {
-      padding: 0;
+      padding: 17px 0 0;
+      background: rgba(0, 0, 0, 0);
   }
 
   nav .nav-logo {
-    margin-left: 2rem;
+    margin-left: 2rem
+  }
+
+  nav .nav-logo img {
+    display: none;
   }
 
   nav .nav-list, nav .nav-social { 
@@ -764,6 +820,14 @@ footer .fab:hover {
       background: transparent;
       border: none;
       cursor: pointer;
+  }
+
+  .mobile-logo {
+    text-align: center;
+  }
+
+  .mobile-logo img {
+    width: 50%;
   }
   
   .icon-menu-close {
@@ -818,9 +882,22 @@ footer .fab:hover {
   }
 
   /* SECTION 01 */
+  #inicio-desktop {
+    display: none;
+  }
+  
+  #inicio-mobile {
+    display: block;
+  }
+
   .section-01 {
+    background: linear-gradient(to bottom, var(--color-vermelho) 50%, #000 50%);
     background-size: cover;
-    padding: 10rem 0 7rem 0;
+    padding: 7rem 0 4rem;
+  }
+
+  .section-01 .left-text {
+    background: linear-gradient(to bottom, var(--color-vermelho), #000, #000);
   }
 
   .section-01 .row {
@@ -841,10 +918,14 @@ footer .fab:hover {
   .section-01 .left-text .faturamento h2 {
     font-size: 2.3rem;
     line-height: 4rem;
+    font-weight: normal;
   }
 
   .section-01 .left-text .faturamento h2 strong {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    line-height: 5rem;
   }
 
   .section-01 .left-text .franqueado h1 {
@@ -853,15 +934,79 @@ footer .fab:hover {
 
   .section-01 .module-contact {
     justify-content: center;
+    margin-top: 2rem;
   }
 
-  .section-01 .right-form {
+  /* MOBILE FORM  */
+
+  #mobile-form {
+    display: block;
+  }
+
+  .section-08 {
+    background: #000;
+    padding: 2rem 0;
+  }
+
+  .section-08 .right-form {
     padding: 0 2rem;
   }
 
-  .section-01 .right-form form .estado {
+  .section-08 .right-form form .estado {
     width: 25%;
   }
+
+  .section-08 .right-form form {
+    color: var(--white-color);
+    background: url('../img/fundo-verde.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+  }
+  
+  .section-08 .right-form form label {
+    margin-top: 1.2rem;
+  }
+  
+  .section-08 .right-form form .form-control, 
+  .section-08 .right-form form .form-select {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  
+  .section-08 .right-form form .endereco {
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .section-08 .right-form form .cidade {
+    width: 100%;
+  }
+  
+  .section-08 .right-form form .estado {
+    width: 15%;
+  }
+  
+  .section-08 .right-form form .module-contact {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .section-08 .right-form form .module-contact .btn {
+    margin-top: 1.5rem;
+    background: var(--color-verde-escuro);
+    width: 40rem;
+  }
+  
+  .section-08 form .btn--secondary::before {
+    background-color: var(--color-vermelho);
+  }
+  
+  .section-08 .mobile-anchor {
+    width: 0;
+  }
+  
 
   /* SECTION 02 */
   .section-02 {
@@ -1029,14 +1174,20 @@ footer .fab:hover {
   }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 769px) {
   /* HEADER */
-  nav {
-    padding: 0;
+    /* HEADER */
+    nav {
+      padding: 17px 0 0;
+      background: rgba(0, 0, 0, 0);
   }
 
   nav .nav-logo {
-    margin-left: 2rem !important;
+    margin-left: 2rem
+  }
+
+  nav .nav-logo img {
+    display: none;
   }
 
   nav .nav-list, nav .nav-social { 
@@ -1066,26 +1217,34 @@ footer .fab:hover {
       bottom: 0;
 
       height: 100vh;
-
+  
       z-index: -1;
       opacity: 0;
       
       background-color: var(--color-azul_claro);
       font-size: 2rem;
   }
-
+  
   .mobile-icon-menu button {
       background: transparent;
       border: none;
       cursor: pointer;
   }
 
+  .mobile-logo {
+    text-align: center;
+  }
+
+  .mobile-logo img {
+    width: 50%;
+  }
+  
   .icon-menu-close {
       text-align: right;
       padding-top: 17px;
       padding-right: 0px;
   }
-
+  
   .mobile-menu ul {
       display: flex;
       flex-direction: column;
@@ -1094,26 +1253,26 @@ footer .fab:hover {
       padding-left: 0;
       margin-top: 20px;
   }
-
+  
   .mobile-menu .nav-item {
       display: block;
       padding-top: 1.2rem;
   }
-
+  
   .fecha-menu {
       display: none;
-
+  
       width: 100%;
       height: 100%;
-
+  
       background-color: rgba(0, 0, 0, 0.7);
       position: fixed;
       top: 0;
       right: 0;
-
+  
       z-index: 109;
   }
-
+  
   .open {
       opacity: 1;
       display: block;
@@ -1126,15 +1285,28 @@ footer .fab:hover {
       transition-duration: 0.45s;
       transition-timing-function: ease-out;
   }
-
+  
   .close {
       display: block;
   }
 
   /* SECTION 01 */
-  .section-01 {
-    background-size: cover;
+  #inicio-desktop {
+    display: none;
   }
+  
+  #inicio-mobile {
+    display: block;
+  }
+
+
+  .section-01 {
+    background: linear-gradient(to bottom, var(--color-vermelho), #000, #000);
+    background-size: cover;
+    padding: 7rem 0;
+  }
+
+  
 
   .section-01 .row {
     gap: 5rem;
@@ -1149,6 +1321,19 @@ footer .fab:hover {
   .section-01 .left-text {
     padding: 0 2rem;
     text-align: center;
+  }
+
+  .section-01 .left-text .faturamento h2 {
+    font-size: 2.3rem;
+    line-height: 4rem;
+    font-weight: normal;
+  }
+
+  .section-01 .left-text .faturamento h2 strong {
+    font-size: 3.7rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    line-height: 5rem;
   }
 
   .section-01 .left-text .franqueado h1 {
@@ -1166,6 +1351,8 @@ footer .fab:hover {
   .section-01 .right-form form .estado {
     width: 25%;
   }
+
+
 
   /* SECTION 02 */
   .section-02 {
@@ -1333,7 +1520,7 @@ footer .fab:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 770px) and (max-width: 1199px) {
   /* HEADER */
   nav {
     padding: 0;
@@ -1458,35 +1645,3 @@ footer .fab:hover {
 }
 
 
-.section-07 {
-  background: url('../img/textura-preta.png') var(--white-color);
-  padding: 10rem 1rem;
-}
-
-.section-07 .row {
-  gap: 10rem;
-}
-
-.section-07 h3 {
-  font-size: 5rem;
-  color: var(--color-verde-escuro);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-.section-07 .module-contact .btn--secondary{
-  width: 40rem;
-  background-color: var(--color-verde-claro);
-}
-
-.section-07 .fotos-direita .card {
-  max-height: 44rem;
-  max-width: 28.5rem;
-  border: 0;
-}
-
-.section-07 .fotos-direita .card img {
-border-radius: 1rem;
-
-}
