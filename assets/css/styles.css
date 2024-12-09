@@ -143,7 +143,7 @@ nav ul li a {
 /* SECTION 01 */
 .section-01 {
   background-color: linear-gradient(to bottom, var(--color-vermelho), #000, #000);
-  background: url('../img/hero2.webp');
+  background: url('../img/hero2-att.webp');
   background-position: center;
   padding: 15rem 0 7rem 0;
 }
@@ -164,13 +164,14 @@ nav ul li a {
 
 .section-01 .left-text .faturamento h2 {
   color: var(--white-color);
-  font-size: 2.7rem;
+  font-size: 3.7rem;
   padding: 1rem;
   border-radius: 1rem;
   text-transform: uppercase;
-  line-height: 5.2rem;
+  line-height: 6.2rem;
   font-family: var(--terceira-font) !important;
   font-weight: normal;
+  text-align: center;
 }
 
 .section-01 .left-text .faturamento h2 strong {
@@ -178,8 +179,10 @@ nav ul li a {
   color: var(--white-color);
   padding: 7px 10px;
   border-radius: 5px;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: bold;
+  font-family: 'brothers', sans-serif !important;
+
 }
 
 .section-01 .left-text .franqueado h1 {
@@ -187,6 +190,12 @@ nav ul li a {
   font-size: 5.5rem;
   font-weight: 500;
   text-transform: uppercase;
+  font-family: 'brothers', sans-serif !important;
+  margin-left: 3rem;
+}
+
+.section-01 .left-text .franqueado h1 strong {
+  font-size: 7.5rem;
 }
 
 .module-contact {
@@ -625,7 +634,7 @@ nav ul li a {
 /* SECTION 07 */
 .section-07 {
   background: url('../img/textura-preta.png') var(--white-color);
-  padding: 10rem 1rem;
+  padding: 10rem 1rem 5rem;
 }
 
 .section-07 .row {
@@ -638,6 +647,7 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .section-07 .module-contact .btn--secondary{
@@ -930,12 +940,21 @@ footer .fab:hover {
   }
 
   .section-01 .left-text .franqueado h1 {
-    font-size: 4rem;
+    font-size: 4rem !important;
+    margin-left: 0;
   }
 
   .section-01 .left-text .franqueado h1 p {
     font-family: 'brothers', sans-serif !important;
     margin: 0;
+  }
+
+  #p-02 strong {
+    font-size: 5.5rem;
+  }
+
+  #p-04 strong {
+    font-size: 4.3rem;
   }
 
   .section-01 .module-contact {
@@ -950,7 +969,7 @@ footer .fab:hover {
   }
 
   .section-08 {
-    background: #000;
+    background: url('../img/textura-preta.png') var(--white-color);
     padding: 2rem 0;
   }
 
@@ -991,7 +1010,7 @@ footer .fab:hover {
   }
   
   .section-08 .right-form form .estado {
-    width: 15%;
+    width: 30%;
   }
   
   .section-08 .right-form form .module-contact {
