@@ -634,7 +634,7 @@ nav ul li a {
 /* SECTION 07 */
 .section-07 {
   background: url('../img/textura-preta.png') var(--white-color);
-  padding: 10rem 1rem 5rem;
+  padding: 10rem 1rem 15rem;
 }
 
 .section-07 .row {
@@ -648,6 +648,10 @@ nav ul li a {
   font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
+}
+
+.section-07 .module-contact {
+  justify-content: center
 }
 
 .section-07 .module-contact .btn--secondary{
@@ -1166,8 +1170,16 @@ footer .fab:hover {
   }
 
   /* SECTION 07 */
+  .section-07 {
+    padding: 10rem 1rem 5rem;
+  }
+
   .section-07 .row {
     gap: 5rem !important;
+  }
+
+  .section-07 h3 {
+    font-size: 4.3rem;
   }
 
   /* FOOTER */
