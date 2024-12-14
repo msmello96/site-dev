@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-azul-escuro: #0A2140;
+    --color-azul-claro: #0f3465;
+    --color-dourado: #A67731;
+    --color-bege: #C8B098;
+
+    --white-color: #FFFFFF;
+    --grey-color: #242424;
+    --light-grey: #5c5c5c;
+
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Sora', sans-serif;
+
+}
+
+html,
+body {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    color: var(--white-color);
+}
+
+p,
+a,
+span,
+input,
+select {
+    font-family: var(--secondary-font);
+    color: var(--light-grey);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* SECTION 01 */
+.section-01 { 
+    padding: 13rem 0;
+    background: url('../img/banner-h1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.section-01 .title .main-title h1 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.section-01 .title .second-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.module-contact .btn-contact {
+    padding: 1rem 1.5rem;
+
+    background-color: var(--color-dourado);
+    color: var(--white-color);
+
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+
+    border: 1px solid var(--white-color);
+}
+
+.module-contact .btn-contact:hover {
+    background-color: var(--color-azul-escuro);
+    transition: all ease-in .3s;
+}
+
+/* SECTION 02 */
+.section-02 {
+    background: url('../img/bg_servicos.webp') repeat-x left bottom #FFF;
+    padding: 10rem 0;
+}
+
+.section-02 .s02-sub-title {
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+}
+
+.section-02 .s02-sub-title h4 {
+    color: var(--color-azul-escuro);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-02 .s02-main-title h3 {
+    color: var(--color-azul-claro);
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-02 .s02-p-text p {
+    color: var(--light-grey);
+    font-size: 2.2rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+
+.section-02 .right-img img {
+    border-radius: 30%;
+    width: 100%;
+}
+
+/* SECTION 03 */
+.section-03 {
+    padding: 10rem 0;
+    background: url('../img/bg-geometrico.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-03 .text-infos .title .main-title h3 {
+    color: var(--color-azul-claro);
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.section-03 .text-infos .title .sub-title h4 {
+    color: var(--color-azul-escuro);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: -2rem 0 5rem;
+}
+
+.section-03 .text-infos .title {
+    text-align: center;
+}
+
+.section-03 .services {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+
+}
+
+.section-03 .feature-panel {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 2px rgba(166, 119, 49, 1);
+    display: flex;
+}
+
+.section-03 .feature-panel .feature-content {
+    padding: 1rem;
+}
+
+.section-03 .feature-panel .feature-content h3 {
+    color: var(--grey-color);
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+}
+
+.section-03 .feature-panel .feature-content p {
+    color: #777777;
+}
+
+.section-03 .feature-panel .feature-icon {
+    padding: 1rem;
+}
+
+.section-03 .module-contact .btn-contact {
+    background: var(--color-azul-claro);
+}
+
+.section-03 .module-contact .btn-contact:hover {
+    background: var(--white-color);
+    color: var(--color-azul-escuro);
+    border: 2px solid var(--color-azul-claro);
+}
+
+/* SECTION 04 */
+.section-04 {
+    padding: 5rem 0;
+}
+
+.section-04 .title-text-primary {
+    color: var(--color-azul-claro) !important;
+    font-size: 5rem !important;
+    font-weight: bold;
+}
+
+.section-04 .text-primary {
+    color: var(--color-azul-escuro) !important;
+}
+
+.section-04 .row .div-infos {
+    margin: 0 auto;
+}
+
+.section-04 .accordion-button:not(.collapsed) {
+    color: var(--color-azul-escuro);
+    background-color: transparent;
+}
+
+.section-04 .module-contact .btn-contact {
+    background: var(--color-azul-claro);
+}
+
+.section-04 .module-contact .btn-contact:hover {
+    background: var(--white-color);
+    color: var(--color-azul-escuro);
+    border: 2px solid var(--color-azul-claro);
+}
+
+/* SECTION 05 */
+.section-05 {
+    background: url('../img/banner-01.webp');
+}
+
+.section-05 .fs-64 {
+    font-size: 6.4rem;
+    letter-spacing: -3px;
+}
+
+.section-05 .module-contact {
+    margin-top: -8rem;
+}
+
+.section-05 .module-contact .btn-contact {
+    background: transparent ;
+}
+
+.section-05 .module-contact .btn-contact:hover {
+    background: var(--white-color);
+    color: var(--color-azul-escuro);
+}
+
+/* SECTION 06 */
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 200px 75px;
+}
+
+footer h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--light-grey);
+}
+
+footer p {
+    color: var(--light-grey);
+    font-size: 2.3rem; 
+}
+
+.infos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-social a {
+    font-size: 3rem;
+}
+
+.footer-social i {
+    color: var(--light-grey);
+}
+
+.footer-dev {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--light-grey);
+    background: var(--third-color);
+    padding: 1rem;
+}
+
+.footer-dev a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light-grey);
+    font-weight: bold;
+}
+
+.footer-dev p {
+    margin-bottom: 0;
+}
+
+.fa-fab {
+    color: var(--light-grey) !important;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.whatsapp-link-footer {
+    text-decoration: none;
+    color: var(--light-grey);
+    cursor: pointer;
+}
+/* Whatsapp */
+.whats {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 185;
+}
+
+.whats:hover{
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+}
+
+
