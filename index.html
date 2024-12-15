@@ -21,6 +21,65 @@
 
 <body>
     <header>
+        <nav>
+            <div class="nav-logo">
+                <a href=""><img src="./assets/img/logo-navbar.png" alt="Logo Santos e Almeida Advogados Associados"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#sobre-nos">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-social">
+                <span>
+                    <a href="https://wa.me/5519994815445" target="_blank" title="Whatsapp"><i class="fa-fab fab fa-whatsapp"></i></a>
+                    
+                    <a href="https://www.instagram.com/santosealmeida.adv/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </span>
+            </div>
+
+            <div class="mobile-icon-menu">
+                <div class="icon-menu">
+                    <button onclick="menuShow()"><img class="menu-icon" src="assets/img/menu_white_36dp.svg"
+                            alt=""></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="mobile-icon-menu">
+                <div class="icon-menu-close">
+                    <button onclick="menuShow()"><img class="icon-close" src="assets/img/close_white_36dp-white.svg"
+                            alt=""></button>
+                </div>
+            </div>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="menuShow()">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-nos" onclick="menuShow()">Sobre nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos" onclick="menuShow()">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq" onclick="menuShow()">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato" onclick="menuShow()">Contato</a></li>
+            </ul>
+
+        </div>
+
+        <div class="fecha-menu" onclick="fechaMenu()"></div>
 
     </header>
 
@@ -42,7 +101,7 @@
                                 </h2>
                             </div>
                             <div class="module-contact d-flex align-items-center">
-                                <a class="btn btn-contact">
+                                <a href="https://wa.me/5519994815445" target="_blank" class="btn btn-contact">
                                     Entrar em contato
                                 </a>
                             </div>
@@ -166,7 +225,7 @@
                 </div>
 
                 <div class="module-contact d-flex justify-content-center align-items-center mt-5">
-                    <a class="btn btn-contact">
+                    <a href="https://wa.me/5519994815445" target="_blank" class="btn btn-contact">
                         Falar com um especialista
                     </a>
                 </div>
@@ -384,7 +443,7 @@
                         </div>
 
                         <div class="module-contact d-flex justify-content-center align-items-center mt-5">
-                            <a class="btn btn-contact">
+                            <a href="https://wa.me/5519994815445" target="_blank" class="btn btn-contact">
                                 Falar com um especialista
                             </a>
                         </div>
@@ -406,7 +465,7 @@
                         </h2>
 
                         <div class="module-contact d-flex mt-5 align-items-center">
-                            <a class="btn btn-contact">
+                            <a href="https://wa.me/5519994815445" target="_blank" class="btn btn-contact">
                                 Falar com um advogado
                             </a>
                         </div>
@@ -431,21 +490,26 @@
                 <div class="infos-footer">
                     <div class="footer-telefone">
                         <p>
-                            <i class="fas fa-phone-alt"></i> (19) 3665-3749 &nbsp; | &nbsp; <a class="whatsapp-link-footer"
-                                href=""> <i class="fa-fab fab fa-whatsapp"></i> (19) 99481-5445</a><br>
+                            <i class="fas fa-phone-alt"></i> <a class="whatsapp-link-footer"
+                                href="https://wa.me/5519994815445" target="_blank"> <i class="fa-fab fab fa-whatsapp"></i> (19) 99481-5445</a><br>
                             <i class="fas fa-map-marker-alt"></i> R. Costa Pereira, 91 - Centro, Mococa - SP
                         </p>
                     </div>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/santosealmeida.adv/" title="Instagram"><i
-                                class="fab fa-instagram">
-                            </i>
-                        </a>
+                    <div class="info-instagram">
+                        <p>
+                            <a href="https://www.instagram.com/santosealmeida.adv/">
+                                <i class="fab fa-instagram"></i> @SANTOSEALMEIDA.ADV
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="footer-dev bg-light">
+        <p>Desenvolvido por <a href="https://www.instagram.com/mellodevspace/" target="_blank">Mello Dev Space</a></p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/js/all.min.js"></script>

@@ -60,6 +60,86 @@ ul li {
     list-style: none;
 }
 
+/* HEADER */
+header {
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.nav-logo {
+  margin-left: 5rem;
+}
+
+.nav-logo img {
+  object-fit: contain;
+  width: 18rem;
+  height: 7rem;
+  padding: 1rem;
+}
+
+.nav-list {
+  margin: 15px auto 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 5rem;
+}
+
+nav ul li a {
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.nav-list ul li:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.nav-list ul li a:hover { 
+  color: var(--color-dourado);
+  transition: 0.2s ease;
+}
+
+.nav-social {
+  margin-top: 5px;
+  margin-right: 100px;
+}
+
+.nav-social span {
+  display: flex;
+  gap: 1.4rem;
+}
+
+nav svg {
+  color: var(--white-color);
+  font-size: 24px;
+}
+
+nav svg:hover {
+  color: var(--color-dourado);
+  transition: 0.3s ease-out;
+  transform: scale(1.2);
+  font-size: 2.4rem;
+}
+
+.mobile-menu, .mobile-icon-menu {
+  display: none;
+}
+
 /* SECTION 01 */
 .section-01 { 
     padding: 13rem 0;
@@ -173,12 +253,11 @@ ul li {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 7rem;
-
 }
 
 .section-03 .feature-panel {
     background-color: #fff;
-    box-shadow: 1px 1px 2px 2px rgba(166, 119, 49, 1);
+    box-shadow: 1px 1px 2px 1px rgba(166, 119, 49, 1);
     display: flex;
 }
 
@@ -208,7 +287,7 @@ ul li {
 .section-03 .module-contact .btn-contact:hover {
     background: var(--white-color);
     color: var(--color-azul-escuro);
-    border: 2px solid var(--color-azul-claro);
+    border: 1px solid var(--color-azul-claro)
 }
 
 /* SECTION 04 */
@@ -242,7 +321,7 @@ ul li {
 .section-04 .module-contact .btn-contact:hover {
     background: var(--white-color);
     color: var(--color-azul-escuro);
-    border: 2px solid var(--color-azul-claro);
+    border: 1px solid var(--color-azul-claro);
 }
 
 /* SECTION 05 */
@@ -274,7 +353,7 @@ ul li {
 /* FOOTER */
 
 footer {
-    padding: 50px 200px 75px;
+    padding: 5rem 0 3rem;
 }
 
 footer h2 {
@@ -287,13 +366,15 @@ footer h2 {
 footer p {
     color: var(--light-grey);
     font-size: 2.3rem; 
+    text-align: center;
 }
 
 .infos-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    
 }
 
 .footer-social {
@@ -310,19 +391,40 @@ footer p {
     color: var(--light-grey);
 }
 
+footer .info-instagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+footer .info-instagram svg {
+    vertical-align: middle;
+    font-size: 2.2rem;
+}
+
+footer .info-instagram i:hover {
+    transform: none !important;
+    transition: none !important;
+    font-size: 3rem !important;
+}
+
+footer .info-instagram p {
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
 .footer-dev {
     display: block;
     width: 100%;
     text-align: center;
-    color: var(--light-grey);
-    background: var(--third-color);
+    color: var(--grey-color);
     padding: 1rem;
 }
 
 .footer-dev a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--light-grey);
+    color: #066FCF;
     font-weight: bold;
 }
 
@@ -341,6 +443,7 @@ footer p {
     color: var(--light-grey);
     cursor: pointer;
 }
+
 /* Whatsapp */
 .whats {
     display: flex;
@@ -357,3 +460,192 @@ footer p {
 }
 
 
+@media only screen and (max-width: 576px) {
+  /* HEADER */
+  nav {
+      padding: 17px 0 0;
+      background: rgba(0, 0, 0, .80);
+  }
+
+  nav .nav-logo {
+    margin-left: 0;
+  }
+
+  nav .nav-list, nav .nav-social { 
+      display: none;
+  }
+
+  .mobile-icon-menu {
+      display: block;
+  }
+
+  .mobile-icon-menu {
+      display: block;
+      border: 0;
+      margin: auto 10px;
+  }
+
+  .mobile-icon-menu .icon-menu button {
+      border: 0;
+      background: transparent;
+  }
+
+  .mobile-menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 100vh;
+  
+      z-index: -1;
+      opacity: 0;
+      
+      background-color: var(--color-azul_claro);
+      font-size: 2rem;
+  }
+  
+  .mobile-icon-menu button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  .mobile-logo {
+    text-align: center;
+  }
+
+  .mobile-logo img {
+    width: 50%;
+  }
+  
+  .icon-menu-close {
+      text-align: right;
+      padding-top: 17px;
+      padding-right: 0px;
+  }
+  
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1.2rem;
+      padding-left: 0;
+      margin-top: 20px;
+  }
+  
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  
+  .fecha-menu {
+      display: none;
+  
+      width: 100%;
+      height: 100%;
+  
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      right: 0;
+  
+      z-index: 109;
+  }
+  
+  .open {
+      opacity: 1;
+      display: block;
+      z-index: 110;
+      background: var(--grey-color);
+      color: #FFFFFF;
+      height: 100%;
+      min-width: 50%;
+      transition-property: opacity;
+      transition-duration: 0.45s;
+      transition-timing-function: ease-out;
+  }
+  
+  .close {
+      display: block;
+  }
+
+  /* SECTION 01 */
+  .section-01 {
+    padding: 13rem 1rem;
+  }
+
+  .section-01 .title .main-title h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .section-01 .title .second-title h2 {
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  .section-01 .module-contact {
+    justify-content: center;
+  }
+
+  /* SECTION 02 */
+  .section-02 {
+    padding: 10rem 1rem;
+  }
+
+  .section-02 .s02-main-title h3 {
+    font-size: 4.5rem;
+  }
+
+  .section-02 .s02-p-text {
+    margin-bottom: 3rem;
+  }
+
+  .section-02 .s02-p-text p {
+    font-size: 2rem;
+  }
+
+  /* SERVICE */
+  .section-03 {
+    padding: 10rem 1rem;
+  }
+
+  .section-03 .text-infos .title .main-title h3 {
+    font-size: 4rem;
+  }
+
+  .section-03 .services {
+    gap: 3rem;
+  }
+
+  /* SECTION 04 */
+  .section-04 {
+    padding: 5rem 1rem;
+  }
+
+  .section-04 .title-text-primary {
+    font-size: 3.5rem !important;
+  }
+
+  /* SECTION 05 */
+  .section-05 .fs-64 {
+    font-size: 5rem;
+  }
+
+  .section-05 .module-contact {
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  footer {
+      padding: 2rem 0 0 0;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
