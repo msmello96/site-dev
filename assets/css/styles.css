@@ -142,7 +142,7 @@ nav svg:hover {
 
 /* SECTION 01 */
 .section-01 { 
-    padding: 13rem 0;
+    padding: 15rem 0;
     background: url('../img/banner-h1.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,11 +213,13 @@ nav svg:hover {
     font-size: 2.2rem;
     line-height: 4rem;
     font-weight: 500;
+    text-align: justify;
+    padding: 0 2rem;
 }
 
 
 .section-02 .right-img img {
-    border-radius: 30%;
+    
     width: 100%;
 }
 
@@ -253,6 +255,7 @@ nav svg:hover {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 7rem;
+    row-gap: 2rem;
 }
 
 .section-03 .feature-panel {
@@ -607,6 +610,15 @@ footer .info-instagram p {
 
   .section-02 .s02-p-text p {
     font-size: 2rem;
+  }
+
+  .section-02 .left-img-01 {
+    order: 3;
+    margin-bottom: 2rem;
+  }
+
+  .section-02 .right-img-02 {
+    order: 4;
   }
 
   /* SERVICE */
