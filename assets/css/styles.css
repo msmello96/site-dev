@@ -1,0 +1,487 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-dourado: #AF9979;
+    
+    --color-verde-original: #26352d;
+    --color-verde-04: #334035;
+    --color-verde-claro: #25D366;
+
+    --color-cinza-escuro: #29292A;
+    --color-cinza-1: #D9D9D9;
+    
+    --color-branco-1: #f2f2f2;
+    --white-color: #FFFFFF;
+    
+    --color-bege: #FFFAF4;
+
+    --title-font: '', '';
+    --text-font: '', '';
+}
+
+html,
+body {
+    color: var(--color-branco-1);
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--color-verde-original);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* SECTION 01 */
+#section-01 {
+   background-image: url('../img/banner-h1.png'); 
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.vantagens ul li {
+    list-style: inside;
+    text-align: left;
+}
+
+#section-01 li::marker {
+    color: var(--white-color);
+}
+
+#section-01 .div-formulario {
+    background: linear-gradient(128deg ,rgba(38, 53, 45, 0.8), rgba(255, 250, 244, 0.5));
+    border: 1px solid var(--color-branco-1);
+}
+
+#section-01 .form-check-input {
+    margin-left: unset;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-verde-claro);
+    border-color: var(--color-verde-claro);
+}
+
+.module-contact {
+    background: var(--white-color);
+    border-radius: 5px;
+}
+
+.module-contact .btn-contact {
+    background: var(--color-verde-claro);
+    color: var(--white-color);
+    border: 0;
+    border-radius: 5px;
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.module-contact .module-btn-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-control { 
+    height: 4rem;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 576px) {
+    #section-01 {
+        background-image: none;
+    }
+
+    #section-01 .title h1 {
+        font-size: 3.5rem !important;
+    }
+
+    #section-01 .vantagens ul {
+        font-size: unset !important;
+    }
+}
+
+
+/* SECTION 02 */
+#section-02 {
+    padding: 15rem 0;
+    background-image: url('../img/vetor-marechal.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.s02-row-2 {
+    justify-content: center;
+}
+
+#section-02 .text-left {
+    background: url('../img/marechal-bg.png') var(--color-branco-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+#section-02 p,
+#section-02 li {
+    color: var(--color-verde-original);
+}
+
+#section-02 .s02-text-infos {
+    color: var(--color-verde-original);
+}
+
+#section-02 li {
+    list-style: inside;   
+}
+
+#section-02 li::marker {
+    color: var(--color-verde-original);
+}
+
+#section-02 .s02-list-infos {
+    border-top: 1px solid var(--color-verde-original);
+    border-bottom: 1px solid var(--color-verde-original);
+    background-color: rgba(217, 217, 217, 0.4);
+}
+
+#section-02 .module-contact {
+    background-color: var(--color-verde-original);
+}
+
+#section-02 .img-right {
+    margin-left: -15px;
+}
+
+#section-02 .img-right img {
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 576px) {
+    #section-02 .text-left {
+        border-radius: 2rem 2rem 0 0 !important;
+    }
+    #section-02 .s02-div-img img {
+        border-radius: 0 0 2rem 2rem !important;
+    }
+}
+
+/* SECTION 03 */
+@media only screen and (max-width: 576px) {
+    #section-03 .s-03-title h4 {
+        font-size: 4.6rem !important;
+    }
+    #section-03 .s-03-title h3 {
+        font-size: 8rem !important;
+    }
+    #section-03 .s03-infos-text p {
+        font-size: 2rem !important;
+    }
+    
+    
+    #section-03 .module-contact {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
+
+/* SECTION 04 */
+#section-04 .container {
+    border: 3px solid var(--color-dourado);
+}
+
+#section-04 .s-04-cards > div {
+    background: var(--color-dourado);
+}
+
+@media only screen and (max-width: 576px) {
+    #section-04 .s-04-infos {
+        flex-direction: column;
+    }
+
+    #section-04 .s-04-infos-title h4 {
+        font-size: 4rem !important;
+    }
+
+    #section-04 .s-04-infos-p p {
+        font-size: 2rem !important;
+    }
+
+    #section-04 .s-04-cards {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #section-04 .s-04-cards-p p {
+        font-size: 1.8rem !important;
+    }
+
+    #section-04 .module-contact {
+        width: 90% !important;
+    }
+}
+
+/* SECTION 05 */
+#section-05 .container { 
+    background: var(--color-branco-1);
+}
+
+#section-05 .text-center {
+    color: var(--color-cinza-escuro);
+}
+
+#section-05 .s05-card {
+    border: 5px solid var(--color-dourado);
+    border-radius: 2rem;
+}
+
+.line {
+    width: 100%;
+    height: 0;
+    border: 2px solid var(--color-dourado);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.line-vertical {
+    height: 100%;
+    width: 0;
+    border: 1px solid var(--color-cinza-1)
+}
+
+@media only screen and (max-width: 576px) {
+    #section-05 .s05-title h3 {
+        font-size: 4rem !important;
+    }
+
+    #section-05 .s05-title h3 span{
+        font-size: 5rem !important;
+    }
+
+    #section-05 .s05-title p {
+        font-size: 1.8rem !important;
+    }
+    
+    #section-05 .module-contact {
+        width: 100% !important;
+    }
+}
+
+/* SECTION 06 */
+#section-06 .container {
+    border: 2px solid var(--color-verde-04);
+}
+
+#section-06 .s06-brand .div-logos {
+    margin-top: -10rem;
+}
+
+#section-06 .s06-title {
+    background-color: var(--color-verde-04);
+    padding-bottom: 12rem;
+}
+
+@media only screen and (max-width: 576px) {
+    #section-06 .s06-title h3 {
+        font-size: 3.6rem !important;
+    }
+
+    #section-06 .s06-title {
+        padding-bottom: 10rem !important;
+    }
+
+    #section-06 .s06-brand .div-logos {
+        margin-top: -7rem;
+    }
+
+    #section-06 .s06-text {
+        flex-direction: column;
+    }
+
+    #section-06 .s06-text .s06-left-text h3 {
+        font-size: 3rem !important;
+    } 
+    
+    #section-06 .s06-text .s06-right-text p {
+        font-size: 1.6rem !important;
+    }
+}
+
+
+/* SECTION 07 */
+
+#section-07 .container .row {
+    background-color: var(--color-verde-04);
+}
+
+#section-07 .s07-title h3 {
+    line-height: 4rem;
+}
+
+#section-07 .s07-infos {
+    border: 3px solid var(--color-dourado);
+}
+
+@media only screen and (max-width: 576px) {
+    #section-07 .s07-title h3 {
+        font-size: 5.2rem !important;
+    }
+    
+    #section-07 .s07-title h3 span {
+        font-size: 3rem !important;
+    }
+
+    #section-07 .s07-infos {
+        flex-direction: column;
+    }
+
+    #section-07 .s07-right {
+        order: 2;
+    }
+
+    #section-07 .s07-right img {
+        border-radius: 2rem 2rem 0 0 !important;
+    }
+
+}
+
+
+/* SECTION 08 */
+
+#section-08 fieldset {
+    border: 2px solid var(--color-dourado) !important;
+    padding:1px !important;
+}
+
+#section-08 form fieldset h3 {
+    margin-top: -2rem;
+}
+
+#section-08 .line {
+    width: 90%;
+}
+
+#section-08 .s08-right-text-list li {
+    list-style-type: disc;
+    margin-bottom: 2rem;
+}
+
+#section-08 .s08-right-text-exemple {
+    background: var(--color-verde-04);
+    border-left: 3px solid var(--color-dourado);
+}
+
+@media only screen and (max-width: 576px) {
+    #section-08 fieldset legend {
+        font-size: 2rem !important;
+    }
+
+    #section-08 fieldset > h3 {
+        font-size: 4rem !important;
+    }
+
+    #section-08 .s08-text-right {
+        flex-direction: column;
+    }
+
+    #section-08 .s08-left-text .fs-50 {
+        font-size: 3.5rem;
+    }
+
+    #section-08 .s08-right-text .fs-22 {
+        font-size: 1.8rem;
+    }
+
+    #section-08 .s08-prod-item {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+
+    #section-08 .s08-prod-item .mobile-h3 {
+        font-size: 4rem;
+    }
+
+    #section-08 .module-contact {
+        width: 95% !important;
+    }
+}
+
+/* SECTION 09 */
+#section-09 .s09-right-gallery {
+    gap: 0.8rem !important;
+}
+
+@media only screen and (max-width: 576px) {
+    #section-09 .s09-title .s09-main-title h3 {
+        font-size: 5rem !important;
+    }
+    
+    #section-09 .s09-title .s09-main-title h3 span {
+        font-size: 3rem !important;
+    }
+
+    #section-09 .s09-infos-text {
+        flex-direction: column;
+    }
+
+    #section-09 .s09-right-gallery-02 {
+        border-radius: 3px !important;
+    }
+
+    #section-09 .s09-right-gallery-02 p {
+        font-size: 1rem !important;
+        padding: 5px !important;
+    }
+
+    #section-09 .s09-right-gallery {
+        gap: 1rem !important;
+    }    
+}
+
+/* SECTION 10 */
+@media only screen and (max-width: 576px) {
+    #section-10 .s10-infos {
+        flex-direction: column;
+    }
+
+    #section-10 .s10-main-title h3 {
+        font-size: 3rem !important;
+    }
+
+    #section-10 .s10-text .fs-22 {
+        font-size: 1.8rem !important;
+    }
+
+    #section-10 .s10-logo {
+        border-top: 3px solid var(--color-dourado);
+        border-left: unset !important;
+    }
+
+    #section-10 .s10-last-title .fs-30 {
+        font-size: 2.5rem !important;
+        line-height: 1;
+    }
+}
+
+/* SECTION 11 */
+@media only screen and (max-width:576px) {
+    #section-11 .s11-infos {
+        flex-direction: column;
+    }
+}
