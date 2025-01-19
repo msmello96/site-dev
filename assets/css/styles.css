@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-amarelo-gradiente: linear-gradient(90deg, rgba(249, 250, 244, 1) -40%, rgba(255, 209, 2, 1) 120%);
+    --color-azul-amarelo-gradiente: linear-gradient(90deg, rgba(72, 118, 135, 1), rgba(255, 209, 2, 1));
+    --color-azul-gradiente: linear-gradient(90deg, rgb(101, 138, 148, 1), rgb(52, 93, 104, 1));
+    
+    
+    --color-amarelo-principal: #F7D230;
+    
+    --color-azul-desbotado: #94AFB6;
+    --color-azul-principal: #27505B;
+    --color-azul-cinza: #EAF0F2;
+    --color-azul-claro: #487687;
+    --color-white: #fff;
+    
+
+    --title-font: 'arpona', 'serif';
+    --text-font: 'neue-haas-grotesk-display', 'sans-serif';
+
+}
+
+html,
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+}
+
+span, p, li {
+    font-family: var(--text-font);
+}
+
+@media only screen and (min-width: 1200px) {
+    .fs-1 {
+        font-size: 3.5rem !important;
+    }
+
+    .fs-2 {
+        font-size: 3rem !important;
+    }
+
+    .fs-3 {
+        font-size: 2rem !important;
+    }
+
+    .fs-4 {
+        font-size: 1.8rem !important;
+    }
+
+    .fs-5 {
+        font-size: 1.5rem !important;
+    }
+
+    .fs-6 {
+        font-size: 1.2rem !important;
+    }
+
+    .form-control-lg, .form-select-lg {
+        height: 4rem !important;
+        font-size: 1.5rem !important; 
+    }
+}
+
+/* HEADER */
+
+header .module-contact { 
+    background: var(--color-amarelo-gradiente);
+}
+
+/* SECTION 01 */
+#section-01 {
+    background: url('../img/BG.png');
+    background-repeat: no-repeat;
+}
+
+#section-01 .module-contact-h1 button {
+    background: var(--color-azul-amarelo-gradiente);
+    color: var(--color-white);
+    border: 1px solid var(--color-azul-amarelo-gradiente);
+}   
+
+#section-01 form a {
+    background: var(--color-amarelo-gradiente);
+    border: 1px solid var(--color-amarelo-gradiente)
+}
+
+#section-01 form button {
+    background: transparent;
+    border: 0;
+}
+
+#section-01 .div-formulario {
+    background: rgb(247, 250, 250, 0.6);
+    backdrop-filter: blur(30px);
+}
+
+/* SECTION 02 */
+#section-02 .s02-info-content .s02-info-content-items .title-item h3, 
+#section-02 .s02-info-content .s02-info-content-items .desc-item p {
+    color: var(--color-azul-principal);
+}
+
+/* SECTION 04 */
+#section-04 {
+    background: url('../img/BG-02.png') #EAF0F2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+/* SECTION 02 */
+#section-04 .s04-about {
+    margin-left: 15rem;
+}
+
+#section-04 .s04-about h4, 
+#section-04 .s04-about p { 
+    color: var(--color-azul-principal);
+}
+
+/* SECTION 05 */
+#section-05 {
+    background: linear-gradient(90deg, var(--color-amarelo-principal) 65%, #D6E1E4 35%)
+}
+
+#section-05 .module-contact button {
+    background: var(--color-azul-gradiente);
+    color: var(--color-white);
+    border: 1px solid var(--color-azul-gradiente);
+}
+
+/* SECTION 06 */
+#section-06 .s06-infos-text {
+    background: var(--color-azul-cinza);
+    color: var(--color-azul-principal);
+}
+
+/* SECTION 07 */
+#section-07 .card {
+    background: var(--color-azul-principal);
+    border: 0px solid transparent;
+}
+
+#section-07 .card-body {
+    background: var(--color-azul-claro);
+    color: var(--color-azul-cinza);
+    margin-bottom: -30px;
+}
+
+#section-07 .s07-card-number {
+    background-color: var(--color-azul-desbotado);
+    color: var(--color-azul-cinza);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 8rem;
+    left: 8rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+/* SECTION 08 */
+#section-08 .s08-content {
+    color: var(--color-azul-principal);
+}
