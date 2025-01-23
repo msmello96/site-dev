@@ -45,6 +45,7 @@ ul li {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title-font);
+    color: var(--color-azul-principal);
 }
 
 span, p, li {
@@ -121,6 +122,18 @@ header .module-contact {
     color: var(--color-azul-principal);
 }
 
+/* SECTION 03 */
+#section-03 .s03-video {
+    width: 56rem;
+    height: 31rem;
+}
+@media only screen and (max-width: 576px) {
+    #section-03 .s03-video {
+        width: 100%;
+        height: 20rem;
+    }
+}
+
 /* SECTION 04 */
 #section-04 {
     background: url('../img/BG-02.png') #EAF0F2;
@@ -129,7 +142,6 @@ header .module-contact {
     background-position: right;
 }
 
-/* SECTION 02 */
 #section-04 .s04-about {
     margin-left: 15rem;
 }
@@ -139,9 +151,24 @@ header .module-contact {
     color: var(--color-azul-principal);
 }
 
+@media only screen and (max-width: 576px) {
+    #section-04 {
+        background-position: center;
+    }
+
+    #section-04 .s04-about {
+        margin-left: 0 !important;
+    }
+}
 /* SECTION 05 */
 #section-05 {
     background: linear-gradient(90deg, var(--color-amarelo-principal) 65%, #D6E1E4 35%)
+}
+
+@media only screen and (max-width: 576px) {
+    #section-05 {
+        background: linear-gradient(180deg, var(--color-amarelo-principal) 65%, #D6E1E4 35%)
+    }
 }
 
 #section-05 .module-contact button {
@@ -185,3 +212,167 @@ header .module-contact {
 #section-08 .s08-content {
     color: var(--color-azul-principal);
 }
+
+@media only screen and (max-width:576px) {
+    #section-08 .s08-content-item-border {
+        border-left: 0 !important; 
+        border-right: 0 !important; 
+        border-top: 2px solid #dee2e6 !important; 
+        border-bottom:2px solid #dee2e6 !important;  
+    }
+}
+
+/* SECTION 09 */
+#section-09 .s09-content {
+    background: var(--color-amarelo-principal);
+    color: var(--color-azul-principal)
+
+}
+
+#section-09 .s09-info-item {
+    background: var(--color-white);
+    color: var(--color-azul-principal)
+}
+
+#section-09 .module-contact button {
+    background: var(--color-azul-gradiente);
+    color: var(--color-white);
+    border: 1px solid var(--color-azul-gradiente);
+}
+
+/* SECTION 10 */
+#section-10 {
+    color: var(--color-azul-principal);
+}
+
+#section-10 .s10-gc-item {
+    background: var(--color-azul-cinza);
+}
+
+/* SECTION 11 */
+#section-11 {
+    background: var(--color-azul-principal);
+    color: var(--color-white);
+}
+
+#section-11 .s11-card-mark p {
+    background: var(--color-amarelo-principal);
+}
+
+#section-11 .s11-cards .card {
+    background: #D6E1E4;
+    color: var(--color-azul-principal);
+}
+
+/* SECTION 12 */
+#section-12 .accordion-header button, 
+#section-12 .accordion-body {
+    color: var(--color-azul-principal);
+}
+
+#section-12 .accordion .accordion-item {
+    background: var(--color-azul-cinza);
+}
+
+#section-12 .accordion .accordion-button {
+    background: #BACCD1;
+}
+
+/* SECTION 13 */
+#section-13 .s13-infos {
+    background: var(--color-amarelo-principal);
+}
+
+#section-13 .module-contact button {
+    background: var(--color-azul-gradiente);
+    color: var(--color-white);
+    border: 1px solid var(--color-azul-gradiente);
+}
+
+#section-13 .s13-text {
+    color: var(--color-azul-principal);
+}
+
+#section-13 .s13-img {
+    margin-right: -10rem;
+    margin-top: -3rem;
+}
+
+@media only screen and (max-width: 576px) {
+    #section-13 .s13-img {
+        margin-right: -10rem;
+        margin-top: -6rem;
+    }
+}
+
+
+/* Whatsapp */
+
+.wpp-link::before {
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease-in-out;
+    background: rgba(37, 211, 102, 0.6);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .whats {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 185;
+  }
+  
+  .whats:hover{
+    transform: scale(1.3);
+    transition: 0.4s ease-in-out;
+  }
+  
+  @keyframes pulse {
+      0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+      50% {
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        transform: scale(1.6);
+      }
+      100% {
+        -webkit-transform: scale(1.7);
+        -moz-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        -o-transform: scale(1.7);
+        transform: scale(1.7);
+        opacity: 0;
+      }
+  }
+    
+  
+
+
+/* FOOTER */
+footer {
+    background: #D6E1E4;
+    color: var(--color-azul-principal);
+}
+
+footer .module-contact button {
+    background: var(--color-azul-gradiente);
+    color: var(--color-white);
+    border: 1px solid var(--color-azul-gradiente);
+}
+
+
+
