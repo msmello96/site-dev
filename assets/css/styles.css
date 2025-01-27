@@ -111,7 +111,7 @@ header .module-contact {
     border: 0;
 }
 
-#section-01 .div-formulario {
+#section-01 .forms {
     background: rgb(247, 250, 250, 0.6);
     backdrop-filter: blur(30px);
 }
@@ -189,6 +189,21 @@ header .module-contact {
     border: 0px solid transparent;
 }
 
+@media only screen and (max-width: 576px) {
+    #section-07 .s07-card-items {
+        gap: 5rem !important;
+    }
+
+    #section-07 .s07-card-number p {
+        font-size: 2.5rem !important;
+    }
+
+    #section-07 .card-body h5 {
+        font-size: 1.6rem !important;
+    }
+}
+
+
 #section-07 .card-body {
     background: var(--color-azul-claro);
     color: var(--color-azul-cinza);
@@ -196,14 +211,13 @@ header .module-contact {
 }
 
 #section-07 .s07-card-number {
+    background: var(--color-azul-claro)
+}
+
+#section-07 .s07-card-number p {
     background-color: var(--color-azul-desbotado);
     color: var(--color-azul-cinza);
-    position: absolute;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    bottom: 8rem;
-    left: 8rem;
     width: 5rem;
     height: 5rem;
 }
@@ -255,7 +269,7 @@ header .module-contact {
     color: var(--color-white);
 }
 
-#section-11 .s11-card-mark p {
+#section-11 .s11-card-mark {
     background: var(--color-amarelo-principal);
 }
 
@@ -304,6 +318,35 @@ header .module-contact {
         margin-top: -6rem;
     }
 }
+
+/* SECTION 14 */
+#section-14 {
+    background: var(--color-azul-principal);
+    color: var(--color-white);
+}
+
+#section-14 h3,
+#section-14 h4 {
+    color: var(--color-white);
+}
+
+#section-14 .s14-system-item {
+    background: #345D68;
+}
+@media only screen and (max-width:576px) {
+    #section-14 .s14-title h3 {
+        font-size: 3rem !important;
+    }
+    
+    #section-14 .s14-system-item h4 {
+        font-size: 2.5rem !important;
+    }
+
+    #section-14 .s14-system-item p {
+        font-size: 1.6rem !important;
+    }
+}
+
 
 
 /* Whatsapp */
