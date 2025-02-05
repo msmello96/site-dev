@@ -124,8 +124,8 @@ header .module-contact {
 
 /* SECTION 03 */
 #section-03 .s03-video {
-    width: 56rem;
-    height: 31rem;
+    width: 100%;
+    height: 25rem;
 }
 @media only screen and (max-width: 576px) {
     #section-03 .s03-video {
@@ -309,7 +309,7 @@ header .module-contact {
 
 #section-13 .s13-img {
     margin-right: -10rem;
-    margin-top: -3rem;
+    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 576px) {
