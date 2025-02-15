@@ -93,6 +93,7 @@ header .module-contact {
 #section-01 {
     background: url('../img/BG.png');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section-01 .module-contact-h1 button {
@@ -101,7 +102,7 @@ header .module-contact {
     border: 1px solid var(--color-azul-amarelo-gradiente);
 }   
 
-#section-01 form a {
+#section-01 form .btn-contact {
     background: var(--color-amarelo-gradiente);
     border: 1px solid var(--color-amarelo-gradiente)
 }
